@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>4단계 케어</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/work.css" />
+
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+
+
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h1>당신의 우울정도는 4단계 입니다 ! </h1>
+                            <h5 style="color:rgb(238, 44, 44)">&nbsp; "심한 수준의 우울감이 시사됩니다. 전문기관의 치료적 개입과 평가가 요구됩니다. 꼭 전문기관을 방문하시길 바랍니다."</h5>
+                            <br>
+                            <br>
+
+                            <h2> 4단계 과제를 수행해보세요 ! </h2>
+                            <br>
+                        </header>
+                        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                            <div class="col">
+                                <div class="card mb-4 shadow-sm">
+                                    <div class="card-header">
+                                        <h4 class="my-0 fw-normal">자기효능감 높이기</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title pricing-card-title">내 인생의 주체는 <br> 내가 되기</h3>
+                                        <br>
+                                        <button type="button" onclick="location.href='/state/assignment/efficacy'">시작하기</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-4 shadow-sm">
+                                    <div class="card-header">
+                                        <h4 class="my-0 fw-normal">생활습관교정</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title pricing-card-title">생활습관 교정을 통해 <br> 우울감 날리기</h3>
+                                        <br>
+                                        <button type="button" onclick="location.href='/state/assignment/habit'">시작하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-4 shadow-sm">
+                                    <div class="card-header">
+                                        <h4 class="my-0 fw-normal">상담하기</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title pricing-card-title"> 마음속의 고민 <br> 상담으로 </h3>
+                                        <br>
+                                        <button type="button" onclick="location.href='/state/assignment/hosi'">시작하기</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+            </section>
+        </div>
+
+
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}

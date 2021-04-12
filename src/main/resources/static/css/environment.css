@@ -1,0 +1,46 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+#header .logo {
+    font-family: "nanumgothic" !important;
+}
+
+
+#check {
+
+    bottom: -80px !important;
+    width: 200px !important;
+    font-family: "nanumgothic" !important;
+}
+
+.row>.col-4 {
+    width: 15% !important;
+}
+
+.bincan {
+    padding: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+input[type='radio']:checked {
+    background-color: red !important;
+    margin-left: 0 !important;
+}
+
+#check {
+    position: relative;
+    left: 180%;
+    bottom: 30px;
+}
+

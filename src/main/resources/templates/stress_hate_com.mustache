@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>스트레스_싫어완료</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+    <style>
+        .box {
+            margin: 10px !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h2>"내가 싫어하는 것"</h2>
+                    </header>
+
+                    <!-- Content -->
+
+                    <p> 앞으로 이제 우리 이런거 절대 보지도 말고 다신 만나지말기로 약속</p>
+                    <div class="box">
+                        {{#stress_hate}}
+                        <h3>{{createdDate}}</h3>
+                        <h5>{{hate}} </h5>
+                        {{/stress_hate}}
+                    </div>
+                    <center><a href="/home" class="button primary">메인화면</a></center>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}

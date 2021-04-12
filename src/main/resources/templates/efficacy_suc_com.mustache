@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>자기효능감_성공의경험작성완료</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+    <style>
+        .box {
+            margin: 10px !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h2>"성공의 경험 작성"</h2>
+                    </header>
+
+                    <!-- Content -->
+
+                    <p> 당신의 성공 스토리가 +1이 되었습니다 ! 앞으로 자신의 성공 스토리를 자주 보러오세요 !
+
+                    </p>
+                    <div class="box">
+                        {{#suc_post}}
+                        <p>
+                            <h5>작성시간: {{createdDate}}</h5>
+                            {{success}}
+                        </p>
+                        {{/suc_post}}
+                    </div>
+                    <center><a href="/home" class="button primary">메인화면</a></center>
+
+            </div>
+        </div>
+
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}

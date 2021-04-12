@@ -1,0 +1,28 @@
+<!-- Menu -->
+<nav id="menu">
+    <header class="major">
+        <h2>메뉴</h2>
+    </header>
+    <ul>
+        <li><a href="/home">홈페이지</a></li>
+        <li><a href="/about">우울이란</a></li>
+        <li><a href="/test_survey">자가테스트</a></li>
+        <li><a href="/state">현재상태</a></li>
+        <li><a href="/board">자유게시판</a></li>
+        
+        {{^name}}
+            <li><a href="/login">로그인</a>
+            </li>
+        {{/name}}
+        {{#name}}
+            <li>
+                <a href="#" onclick="document.getElementById('logout').submit();">로그아웃</a>
+                <div style="display:none">
+                    <form id="logout" action="/logout" method="POST">
+                        <input type="hidden" name="{{_csrf.parameterName}}" value="{{_csrf.token}}"/>
+                    </form>
+                </div>
+            </li>
+        {{/name}}
+    </ul>
+</nav>

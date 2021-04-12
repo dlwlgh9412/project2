@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>board</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/css/font.css" />
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을
+						찾아'</a>
+				</header>
+
+
+				<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h1>'우울 뽀시기' <br />
+								내안에 숨어있는 우울을 찾아</h1>
+							<h2>무엇이든 물어보세요 ! </h2>
+						</header>
+
+					</div>
+
+				</section>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">작성자</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						{{#posts}}
+						<tr>
+							<td scope="row">{{id}} </td>
+							<td scope="row"><a href="/board/{{id}}">{{title}}</a></td>
+							<td scope="row">{{author}} </td>
+						</tr>
+						{{/posts}}
+
+
+					</tbody>
+				</table>
+				<p align="right"><button onclick="location.href='/board/writePage'">글쓰기</button></p>
+			</div>
+		</div>
+
+
+	<!-- Sidebar -->
+	{{>layout/sidebar}}
+
+				<!-- Menu -->
+				{{>layout/menu}}
+
+
+				<!-- Section -->
+				{{>layout/section}}
+			
+				<!-- Footer -->
+				{{>layout/footer}}
+

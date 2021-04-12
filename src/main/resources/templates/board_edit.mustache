@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>board_edit</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="_csrf" content="{{_csrf.token}}"/>
+    <meta name="_csrf_header" content="{{_csrf.headerName}}"/>
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+			</header>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>무엇이든 물어보세요 ! </h2>
+						</header>
+					</div>
+
+				</section>
+
+				<!-- Form -->
+				<h3>글 수정</h3>
+
+				<form action="#">
+					<div class="row gtr-uniform">
+						<div class="col-6 col-12-xsmall">
+							<input type="text" name="title" id="title" value="{{post.title}}"/>
+						</div>
+
+						<!-- Break -->
+
+						<div class="col-6 col-12-small">
+						</div>
+
+
+						<div class="col-12">
+							<textarea name="demo-message" id="text" rows="12">{{post.text}}</textarea>
+						</div>
+						<!-- Break -->
+						<div class="col-12">
+                            <button type="button" id="btnUpdate" value="{{post.id}}" class="primary">수정</button>
+                            <button type="button" class="primary" onclick="history.back()">취소</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+
+	<!-- Sidebar -->
+	{{>layout/sidebar}}
+
+				<!-- Menu -->
+				{{>layout/menu}}
+
+
+				<!-- Section -->
+				{{>layout/section}}
+			
+				<!-- Footer -->
+				{{>layout/footer}}
+

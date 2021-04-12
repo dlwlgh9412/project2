@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>test_environment</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="_csrf" content="{{_csrf.token}}" />
+    <meta name="_csrf_header" content="{{_csrf.headerName}}" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/environment.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <style>
+        .st {
+            width: 75em !important;
+        }
+    </style>
+
+</head>
+
+<body class="is-preload">
+
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>환경 요인 체크 </h1>
+                    </header>
+
+                    <!-- Form -->
+                    <h3>기본사항</h3>
+
+                    <form method="post" action="/setUserEnv">
+                        <div class="row gtr-uniform">
+                            <!--개행-->
+                            <div style="width:100%; word-break:break-all;word-wrap:break-word;">
+                            </div>
+
+                            <div class="col-6 col-12-xsmall">
+                                <input type="text" name="height" id="height" placeholder="키(cm)" />
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <input type="text" name="weight" id="weight" placeholder="몸무게(kg)" />
+                            </div>
+
+
+                            <!-- Break -->
+                            <div style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <h3>학력사항</h3>
+                            <div class="col-12">
+                                <select name="grade" id="grade">
+									<option value="">학년</option>
+									<option value="1">1학년</option>
+									<option value="2">2학년</option>
+									<option value="3">3학년</option>
+									<option value="4">4학년</option>
+								</select>
+                            </div>
+
+                            <div class="col-6 col-12-xsmall">
+                                <input type="text" name="studyTime" id="studyTime" class="st" placeholder="일주일 기준 공부시간 ( 곱하기 60을 하시어 분 단위로 입력해주세요^^)" />
+                            </div>
+                            <!-- Break -->
+                            <div style="width:100%; word-break:break-all;word-wrap:break-word;">
+                            </div>
+                            <h3>자퇴를 생각 해봤습니까?</h3>
+                            <div class="bincan" style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="dropout-true" name="isDropOut" value="true">
+                                <label for="dropout-true">네</label>
+
+                            </div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="dropout-false" name="isDropOut" value="false">
+                                <label for="dropout-false">아니오</label>
+                            </div>
+                            <!--수면-->
+                            <div style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <h3>수면정보</h3>
+                            <div class="col-12">
+                                <select name="sleepTime" id="sleepTime">
+									<option value="">평균 수면시간</option>
+									<option value="1">1시간</option>
+									<option value="2">2시간</option>
+									<option value="3">3시간</option>
+									<option value="4">4시간</option>
+									<option value="5">5시간</option>
+									<option value="6">6시간</option>
+									<option value="7">7시간</option>
+									<option value="8">8시간</option>
+									<option value="9">9시간</option>
+									<option value="10">10시간</option>
+									<option value="11">11시간</option>
+									<option value="12">12시간</option>
+									<option value="13">13시간</option>
+									<option value="14">14시간</option>
+									<option value="15">15시간</option>
+									<option value="16">16시간</option>
+									<option value="17">17시간</option>
+									<option value="18">18시간</option>
+									<option value="19">19시간</option>
+									<option value="20">20시간</option>
+									<option value="21">21시간</option>
+									<option value="22">22시간</option>
+									<option value="23">23시간</option>
+								</select>
+                            </div>
+                            <!--병력-->
+                            <div style="width:100%; word-break:break-all;word-wrap:break-word;">
+                            </div>
+                            <h3>병력 정보</h3>
+                            <div class="bincan" style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <h4>우울증을 진단 받은 적이 있습니까? </h4>
+                            <div class="bincan" style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="isAnxietyTrue" name="dpDiagnosis" value="true">
+                                <label for="isAnxietyTrue">네</label>
+
+                            </div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="isAnxietyFalse" name="dpDiagnosis" value="false">
+                                <label for="isAnxietyFalse">아니오</label>
+                            </div>
+                            <div class="bincan" style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <h4>우울증을 치료 받은 적이 있습니까? </h4>
+                            <div class="bincan" style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="isCureAnxietyTrue" name="dpCure" value="true">
+                                <label for="isCureAnxietyTrue">네</label>
+
+                            </div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="isCureAnxietyFalse" name="dpCure" value="false">
+                                <label for="isCureAnxietyFalse">아니오</label>
+                            </div>
+
+
+                            <div class="bincan" style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <h4>불안장애를 진단 받은 적이 있습니까? </h4>
+                            <div class="bincan" style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="isDepressionTrue" name="axDiagnosis" value="true">
+                                <label for="isDepressionTrue">네</label>
+                            </div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="isDepressionFalse" name="axDiagnosis" value="false">
+                                <label for="isDepressionFalse">아니오</label>
+                            </div>
+
+
+                            <div class="bincan" style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <h4>불안장애를 치료 받은 적이 있습니까? </h4>
+                            <div class="bincan" style="width:100%; word-break:break-all;word-wrap:break-word;"></div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="isCureDepressionTrue" name="axCure" value="false">
+                                <label for="isCureDepressionTrue">네</label>
+
+                            </div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="isCureDepressionFalse" name="axCure" value="false">
+                                <label for="isCureDepressionFalse">아니오</label>
+                            </div>
+                        </div>
+                        <input type="hidden" name="{{_csrf.parameterName}}" value="{{_csrf.token}}" />
+
+
+                    <!-- Elements -->
+                    <h2 id="elements"></h2>
+                    <div class="row gtr-200">
+                        <div class="col-6 col-12-medium">
+
+                            <!-- Text stuff -->
+                            <input type="submit" value="등록" />
+                        </div>
+                    </div>
+                    </form>
+
+
+                </section>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            {{>layout/sidebar}}
+
+            <!-- Menu -->
+            {{>layout/menu}}
+
+
+            <!-- Section -->
+            {{>layout/section}}
+
+            <!-- Footer -->
+            {{>layout/footer}}

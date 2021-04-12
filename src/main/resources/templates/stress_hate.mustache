@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>스트레스_싫어</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="_csrf" content="{{_csrf.token}}"/>
+    <meta name="_csrf_header" content="{{_csrf.headerName}}"/>
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+				</header>
+
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h2>"내가 싫어하는 것 "</h2>
+					</header>
+
+					<!-- Content -->
+
+					<p> 본인이 어떤것을 싫어하는 지 생각해보고 한번 써보자
+						그리고 되도록이면 그것을 하지않고, 피해봅시다.
+					</p>
+					<dl>
+						<dt>예시1</dt>
+						<dd>
+							<p>나 방바닥에 머리카락 있는거 개 시러.........그래서 맨날 청소해</p>
+						</dd>
+						<dt>예시2</dt>
+						<dd>
+							<p>아픈거 시러...그래서 타이레놀 맨날 구비해놔ㅠㅠ</p>
+						</dd>
+						<dt>작성해보세요</dt>
+						<dd>
+							<textarea name="stress_hate" id="stress_hate_text" placeholder="당신의 이야기를 들려주세요" rows="6"></textarea>
+							<br>
+							<button id="btn_stress_hate" type="button" >완료</button>
+							<!-- 완료 시 stress_hate_ 페이지-->
+						</dd>
+					</dl>
+
+
+
+			</div>
+		</div>
+
+<!-- Sidebar -->
+{{>layout/sidebar}}
+
+<!-- Menu -->
+{{>layout/menu}}
+
+
+<!-- Section -->
+{{>layout/section}}
+
+<!-- Footer -->
+{{>layout/footer}}
+

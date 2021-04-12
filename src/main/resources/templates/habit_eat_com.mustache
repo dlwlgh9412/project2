@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>식습관개선_완료</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+    <style>
+        .box {
+            margin: 10px !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h2>"수면습관교정"</h2>
+                    </header>
+
+                    <!-- Content -->
+                    <div class="box">
+                        {{#habit_eat}}
+                            <br>
+                        <h3> {{createdDate}}</h3>
+                        <div class="box">
+                            <h3>1.정크푸드 안먹는날 </h3>
+                            <h5>{{junk}}</h5>
+                        </div>
+                        <div class="box">
+                            <h3>2.직접 만들어서 먹는날 </h3>
+                            <h5>{{cook}}</h5>
+                        </div>
+                        <div class="box">
+                            <h3>3. 삼시세끼 제 때 챙겨먹기 </h3>
+                            <h5>{{onTime}}</h5>
+                        </div>
+                        {{/habit_eat}}
+                    </div>
+                </section>
+                <center><a href="/home" class="button primary">메인화면</a></center>
+
+            </div>
+        </div>
+
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}

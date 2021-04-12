@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>식습관교정</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="_csrf" content="{{_csrf.token}}"/>
+    <meta name="_csrf_header" content="{{_csrf.headerName}}"/>
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+
+	<style>
+		textarea{
+			height: 80px !important ;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+				</header>
+
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h2>"식습관 교정"</h2>
+					</header>
+
+					<!-- Content -->
+
+					<h3>1.정크푸드 안먹는 날</h3>
+					<dl>
+						<dt>예시</dt>
+						<dd>
+							<p>2021.03.23 오늘은 건강하게 한식위주로 ^_^  </p>
+						</dd>
+						<dt>오늘부터 작성해봅시다</dt>
+						<dd>
+							<textarea name="habit_junk" id="habit_junk_text" placeholder="당신의 이야기를 들려주세요"" rows="6"></textarea>
+							<br>
+						</dd>
+					</dl>
+
+					<h3>2.직접 만들어서 먹는 날</h3>
+					<dl>
+						<dt>예시</dt>
+						<dd>
+							<p>2021.03.23 오늘은 내가 김치찌개를 만들어서 먹었다 난 요리사 </p>
+						</dd>
+						<dt>오늘부터 작성해봅시다</dt>
+						<dd>
+							<textarea name="habit_cook" id="habit_cook_text" placeholder="당신의 이야기를 들려주세요"" rows="6"></textarea>
+							<br>
+						</dd>
+					</dl>
+
+					<h3>3. 삼시세끼 제 때 챙겨먹기</h3>
+					<dl>
+						<dt>예시</dt>
+						<dd>
+							<p>2021.03.23 8AM 아침 1PM점심 7PM저녁 완벽 </p>
+						</dd>
+						<dt>오늘부터 작성해봅시다</dt>
+						<dd>
+							<textarea name="habit_ontime" id="habit_ontime_text" placeholder="당신의 이야기를 들려주세요"" rows="6"></textarea>
+							<br>
+							<button id="btn_habit_eat" type="button" >완료</button>
+							<!-- 완료 시 habit_eat_com 페이지-->
+						</dd>
+					</dl>
+
+
+
+			</div>
+		</div>
+
+	
+	<!-- Sidebar -->
+	{{>layout/sidebar}}
+
+				<!-- Menu -->
+				{{>layout/menu}}
+
+
+				<!-- Section -->
+				{{>layout/section}}
+			
+				<!-- Footer -->
+				{{>layout/footer}}
+

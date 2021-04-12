@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>자기효능감_긍정환경작성완료</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+
+    <style>
+        .box {
+            margin: 10px !important;
+        }
+    </style>
+
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h2>"긍정적 환경 조성"</h2>
+                    </header>
+
+                    <!-- Content -->
+
+                    <p> 마음이 조금이라도 가벼워졌나요? 이제부터 우리는 좋은 것들만 보고, 느끼고 옆에 두기로 합시다 !
+
+                    </p>
+                    <div class="box">
+                        {{#posi_post}}
+                        <p>
+                            <h5>작성시간: {{createdDate}}</h5>
+                            {{positive}}
+                        </p>
+                        {{/posi_post}}
+                    </div>
+                    <center><a href="/home" class="button primary">메인화면</a></center>
+
+
+            </div>
+        </div>
+
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}

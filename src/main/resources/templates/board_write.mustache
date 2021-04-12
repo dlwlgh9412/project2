@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<title>board_write</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="_csrf" content="{{_csrf.token}}"/>
+    <meta name="_csrf_header" content="{{_csrf.headerName}}"/>
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+			</header>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>무엇이든 물어보세요 ! </h2>
+						</header>
+					</div>
+
+				</section>
+
+				<!-- Form -->
+				<h3>글 작성</h3>
+
+				<form action="#">
+					<div class="row gtr-uniform">
+						<div class="col-6 col-12-xsmall">
+							<input type="text" name="demo-name" id="title" value="" placeholder="제목" />
+						</div>
+
+						<!-- Break -->
+
+						<div class="col-6 col-12-small">
+						</div>
+
+
+						<div class="col-12">
+							<textarea name="demo-message" id="text" placeholder="궁금하거나, 하고 싶은 말을 적어주세요"
+								rows="12"></textarea>
+						</div>
+						<!-- Break -->
+						<div class="col-12">
+
+                            <center><button type="button" class="primary" id="btnSave">등록</button></center>
+
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+
+	<!-- Sidebar -->
+	{{>layout/sidebar}}
+
+				<!-- Menu -->
+				{{>layout/menu}}
+
+
+				<!-- Section -->
+				{{>layout/section}}
+			
+				<!-- Footer -->
+				{{>layout/footer}}
+

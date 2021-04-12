@@ -1,0 +1,40 @@
+#check {
+    position: relative;
+    left: 180%;
+    bottom: 30px;
+}
+
+/*찾았어요 저 opacity가 0으로 되어있었네요 이제 디자인 수정해서 쓰시면 되요 감사합니다 최고최고 */
+input[type='radio'] {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: gainsboro !important;
+    border: 1px !important;
+    border-color: black !important;
+    border-style: solid !important;
+    z-index: auto !important;
+    display: inline-block !important;
+    opacity: 1 !important;
+}
+
+input[type='radio']:checked {
+    background-color: rgb(90, 89, 89) !important;
+    border: 1px solid black !important;
+}
+
+input[type='checkbox'] {
+    opacity: 1 !important;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: red !important;
+    border: 1px !important;
+    border-color: black !important;
+    border-style: solid !important;
+    z-index: auto !important;
+    display: inline-block !important;
+}
+
+input[type='checkbox']:checked {
+    background-color: black !important;
+    border: 1px solid black !important;
+}

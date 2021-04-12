@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>수면습관교정</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="_csrf" content="{{_csrf.token}}"/>
+    <meta name="_csrf_header" content="{{_csrf.headerName}}"/>
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+
+	<style>
+		textarea{
+			height: 80px !important ;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+				</header>
+
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h2>"수면 습관 교정"</h2>
+					</header>
+
+					<!-- Content -->
+
+					<h3>1.규직적으로 자고 일어나기</h3>
+					<dl>
+						<dt>예시</dt>
+						<dd>
+							<p>2021.03.23 8AM 굿모닝 10PM 굿나잇</p>
+						</dd>
+						<dt>오늘부터 작성해봅시다</dt>
+						<dd>
+							<textarea name="habit_regular" id="habit_regular_text" placeholder="당신의 이야기를 들려주세요" rows="6"></textarea>
+							<br>
+						</dd>
+					</dl>
+
+					<h3>2.카페인 안 먹는 날 만들기</h3>
+					<dl>
+						<dt>예시</dt>
+						<dd>
+							<p>2021.03.23 오늘은 카페인 안먹었다 ! </p>
+						</dd>
+						<dt>오늘부터 작성해봅시다</dt>
+						<dd>
+							<textarea name="habit_caffeine" id="habit_caffeine_text" placeholder="당신의 이야기를 들려주세요" rows="6"></textarea>
+							<br>
+						</dd>
+					</dl>
+
+					<h3>3. 자기 1시간 전자기기 만지지말기</h3>
+					<dl>
+						<dt>예시</dt>
+						<dd>
+							<p>2021.03.23 오늘은 9PM부터 핸드폰 내 침대에서 OUT ! </p>
+						</dd>
+						<dt>오늘부터 작성해봅시다</dt>
+						<dd>
+							<textarea name="habit_hour" id="habit_hour_text" placeholder="당신의 이야기를 들려주세요" rows="6"></textarea>
+							<br>
+							<button id="btn_habit_sleep" type="button" >완료</button>
+							<!-- 완료 시 habit_sleep_com 페이지-->
+						</dd>
+					</dl>
+
+
+
+			</div>
+		</div>
+
+
+	<!-- Sidebar -->
+	{{>layout/sidebar}}
+
+				<!-- Menu -->
+				{{>layout/menu}}
+
+
+				<!-- Section -->
+				{{>layout/section}}
+			
+				<!-- Footer -->
+				{{>layout/footer}}
+

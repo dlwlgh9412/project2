@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>수면습관개선_완료</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+    <style>
+        .box {
+            margin: 10px !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h2>"수면습관교정"</h2>
+                    </header>
+
+                    <!-- Content -->
+                    <div class="box">
+                        {{#habit_sleep}}
+                        <h3> {{createdDate}}</h3>
+                        <div class="box">
+                            <h3>1.규직적으로 자고 일어나기 </h3>
+                            <h5>{{regular}}</h5>
+                        </div>
+                        <div class="box">
+                            <h3>2.카페인 안 먹는 날 만들기 </h3>
+                            <h5>{{caffeine}}</h5>
+                        </div>
+                        <div class="box">
+                            <h3>3. 자기 1시간 전자기기 만지지말기 </h3>
+                            <h5>{{hour}}</h5>
+                        </div>
+                        {{/habit_sleep}}
+                    </div>
+
+                </section>
+                <center><a href="/home" class="button primary">메인화면</a></center>
+
+            </div>
+        </div>
+
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}

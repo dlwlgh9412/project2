@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>board_view</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="_csrf" content="{{_csrf.token}}" />
+    <meta name="_csrf_header" content="{{_csrf.headerName}}" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/font.css" />
+    <style>
+        .edit1 {
+            position: relative !important;
+            top: 450px !important;
+            left: 1x !important;
+        }
+        
+        .edit2 {
+            position: relative !important;
+            top: 460px !important;
+            left: 1px !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="http://localhost:8080/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h2>무엇이든 물어보세요 ! </h2>
+                        </header>
+                    </div>
+
+                </section>
+
+                <!-- Form -->
+                <h3>게시글 보기</h3>
+                <table class="type06">
+                    <tr>
+                        <th scope="row">글번호</th>
+                        <td id="id">{{post.id}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">작성시간</th>
+                        <td>{{post.createdDate}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">최종수정시간</th>
+                        <td>{{post.modifiedDate}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>{{post.title}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="even">글쓴이</th>
+                        <td class="even">{{post.author}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">내용</th>
+                        <td>{{post.text}}</td>
+                    </tr>
+                    {{#author}}
+                    <a class="button primary small edit1" href="/board/edit/{{post.id}}">수정</a>
+                    <br>
+                    <button type="button" class="button primary small edit2" id="btnDelete" value="{{post.id}}">삭제</button> {{/author}}
+                </table>
+            </div>
+
+        </div>
+
+
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}

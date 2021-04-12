@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>스토리_나완료</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+				</header>
+
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h2>"나는 누구인가"</h2>
+					</header>
+
+					<!-- Content -->
+
+					<p> 당신에 대해서 하나씩 알아 가고 있나요? 생각날 때마다 하나씩 적어봅시다 
+
+					</p>
+					<h3>{{#i_post}}
+							{{date}}
+					</h3>
+					<div class="box">
+					<p>		{{i}}
+						{{/i_post}} </p>
+					</div>
+
+					<a href="/home" class="button primary">메인화면</a>
+
+			</div>
+		</div>
+
+<!-- Sidebar -->
+{{>layout/sidebar}}
+
+<!-- Menu -->
+{{>layout/menu}}
+
+
+<!-- Section -->
+{{>layout/section}}
+
+<!-- Footer -->
+{{>layout/footer}}
+

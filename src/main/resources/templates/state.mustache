@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>State</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/state.css">
+    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template -->
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <style>
+        .h {
+            display: inline-block !important;
+            margin: 0px 0px 0px 0px !important;
+            position: relative !important;
+            top: 0px !important;
+            font-family: 'Nanum Gothic' !important;
+        }
+        /* .is-preload {
+            padding-top: 0px;
+            !important
+        } */
+        
+        .primary {
+            width: 150px!important;
+            margin: 0 0 0px 30px!important;
+            display: inline-block!important;
+            position: relative!important;
+            top: -10px!important;
+            right: 0px!important;
+            /* position: absolute; */
+        }
+        
+        #myChart {
+            margin-top: 50px!important;
+            position: relative!important;
+        }
+        
+        .toggle:before {
+            color: #f56a6a !important;
+        }
+        
+        .h2 {
+            display: inline !important;
+            font-family: 'Nanum Gothic' !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload" style="padding: 0px;">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <div style="display: inline-block">
+                            <h2 class="h"> 현재 나의 우울정도를 그래프로 확인해보세요 ! </h2>
+                            <h2 class="h2"> &nbsp;&nbsp; - &nbsp;&nbsp;과제하러 가기 </h2>
+                            <div style="display: inline-block">
+                                <center><a href="/state/{{state}}" class="button primary">과제하러가기</a>
+                            </div>
+                        </div>
+
+                        <div> <canvas id="myChart" width="1000" height="500"></canvas></div>
+                    </div>
+
+
+
+
+                </section>
+
+                <br>
+                <br>
+            </div>
+        </div>
+        </main>
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}
+
+        <script>
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                    datasets: [{
+                        label: '# 우울정도',
+                        data: [2, 3, 2, 1, 1, 2],
+                        backgroundColor: [
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+
+                        ],
+                        borderColor: [
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+                            'rgba(245, 106, 106, 1)',
+
+                        ],
+                        borderWidth: 2,
+                        fill: false
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+
+                                min: 0,
+                                stepSize: 1,
+                                max: 4,
+                            }
+                        }]
+                    },
+                },
+
+            });
+        </script>

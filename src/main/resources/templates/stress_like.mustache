@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>스트레스_좋아</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="_csrf" content="{{_csrf.token}}"/>
+    <meta name="_csrf_header" content="{{_csrf.headerName}}"/>
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+				</header>
+
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h2>"내가 좋아하는 것 "</h2>
+					</header>
+
+					<!-- Content -->
+
+					<p> 내가 무엇을 좋아하는 지 생각하고 작성해봅시다
+						내가 행복해 지는 마법이 펼쳐질것입니다
+					</p>
+					<dl>
+						<dt>예시1</dt>
+						<dd>
+							<p>난 배그라는 게임을 조아하는데ㅠ 1대1로 적 만나서 내가 이겼을때의 그 짜릿함이란ㅠ</p>
+						</dd>
+						<dt>예시2</dt>
+						<dd>
+							<p>아무 생각없이 침대에 누웠는데 살짝 시원한 바람들어오고 햇빛은 비출랑말랑 나는 잠이 솔솔</p>
+						</dd>
+						<dt>작성해봅시다</dt>
+						<dd>
+							<textarea name="stress_like" id="stress_like_text" placeholder="당신의 이야기를 들려주세요" rows="6"></textarea>
+							<br>
+							<button id="btn_stress_like" type="button" >완료</button>
+							<!-- 완료 시 stress_like_com 페이지-->
+						</dd>
+					</dl>
+
+
+
+			</div>
+		</div>
+
+<!-- Sidebar -->
+{{>layout/sidebar}}
+
+<!-- Menu -->
+{{>layout/menu}}
+
+
+<!-- Section -->
+{{>layout/section}}
+
+<!-- Footer -->
+{{>layout/footer}}
+

@@ -1,0 +1,29 @@
+#header .logo {
+    font-family: "nanumgothic" !important;
+}
+
+.button {
+    font-family: "nanumgothic" !important;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.toggle{
+    color: #f56a6a !important;
+}

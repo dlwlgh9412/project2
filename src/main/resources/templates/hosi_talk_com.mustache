@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>병원_상담일지완료</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/main.css" />
+	<link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+				</header>
+
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h2>"병원 상담일지 쓰기"</h2>
+					</header>
+
+					<!-- Content -->
+
+					<h3>{{#talk_post}}
+							{{date}}
+					</h3>
+					<div class="box">
+					<p>		{{talk}}
+						{{/talk_post}} </p>
+					</div>
+					<a href="/home" class="button primary">메인화면</a>
+
+			</div>
+		</div>
+
+
+	<!-- Sidebar -->
+	{{>layout/sidebar}}
+
+				<!-- Menu -->
+				{{>layout/menu}}
+
+
+				<!-- Section -->
+				{{>layout/section}}
+			
+				<!-- Footer -->
+				{{>layout/footer}}
+

@@ -1,0 +1,50 @@
+buildscript {
+    ext {
+        springBootVersion = '2.3.5.RELEASE'
+        queryDslVersion = '4.4.0'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.1.6.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.6.RELEASE'
+}
+
+
+
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-mustache')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('javax.validation:validation-api:2.0.1.Final')
+    testCompile('org.springframework.security:spring-security-test')
+    runtime('org.springframework.boot:spring-boot-devtools')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    implementation("com.querydsl:querydsl-jpa:${queryDslVersion}")
+    annotationProcessor ("com.querydsl:querydsl-apt:${queryDslVersion}:jpa")
+    testImplementation ("com.querydsl:querydsl-jpa:${queryDslVersion}")
+    testAnnotationProcessor ("com.querydsl:querydsl-apt:${queryDslVersion}:jpa")
+
+    implementation "org.projectlombok:lombok"
+    annotationProcessor ("org.projectlombok:lombok")
+    testImplementation ("org.projectlombok:lombok")
+    testAnnotationProcessor ("org.projectlombok:lombok")
+
+    compile('mysql:mysql-connector-java')
+    compile('org.apache.httpcomponents:httpclient:4.5.9')
+}

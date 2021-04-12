@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>운동습관생성_완료</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="_csrf" content="{{_csrf.token}}" />
+    <meta name="_csrf_header" content="{{_csrf.headerName}}" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+    <style>
+        .box {
+            margin: 10px !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h2>"운동습관생성"</h2>
+                    </header>
+
+                    <!-- Content -->
+
+                    <div class="box">
+                        {{#habit_workout}}
+                        <h3>{{createdDate}}</h3>
+                        <div class="box">
+                            <h3>1.30분 산책하기 </h3>
+                            <h5>{{walking}}</h5>
+                        </div>
+                        <div class="box">
+                            <h3>2.15분 스트레칭 </h3>
+                            <h5>{{stretching}}</h5>
+                        </div>
+                        <div class="box">
+                            <h3>3. 좋아하는 운동 만들고 실행하기 </h3>
+                            <h5>{{workout}}</h5>
+                        </div>
+                        {{/habit_workout}}
+                    </div>
+
+                </section>
+
+                <center><a href="/home" class="button primary">메인화면</a></center>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}

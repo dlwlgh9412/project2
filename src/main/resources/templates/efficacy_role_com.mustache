@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>자기효능감_롤모델작성완료</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+    <style>
+        .box {
+            margin: 10px !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="/home" class="logo"><strong>우울뽀시기&nbsp;&nbsp;&nbsp;</strong> '내안에 숨어있는 우울을 찾아'</a>
+                </header>
+
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h2>"롤모델 작성"</h2>
+                    </header>
+
+                    <!-- Content -->
+
+                    <p> 당신의 롤모델은 누구였나요? 우리는 그 분을 어떻게 본받으면서 살아가야될까요?
+                        <br> 이제 당신 인생의 계획을 짜보세요 !
+
+                    </p>
+                    <div class="box">
+                        {{#role_post}}
+                        <p>
+                            <h5>작성시간: {{createdDate}}</h5>
+                            {{roleModel}}
+                        </p>
+                        {{/role_post}}
+                    </div>
+                    <center><a href="/home" class="button primary">메인화면</a></center>
+
+            </div>
+        </div>
+
+
+        <!-- Sidebar -->
+        {{>layout/sidebar}}
+
+        <!-- Menu -->
+        {{>layout/menu}}
+
+
+        <!-- Section -->
+        {{>layout/section}}
+
+        <!-- Footer -->
+        {{>layout/footer}}
